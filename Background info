@@ -1,0 +1,3 @@
+Linked List: linear collection of data elements, it is a data structure of a collection of nodes* which together represent a sequence. A node is a
+             basic unit used in comp science. It's a data point of a large data structure. Node in a linked list must be read in order from the begining as 
+             list are inherently sequential access. 
