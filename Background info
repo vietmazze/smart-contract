@@ -1,3 +1,5 @@
+[Data Structure]
+
 Linked List: linear collection of data elements, it is a data structure of a collection of nodes* which together represent a sequence. A node is a
              basic unit used in comp science. It's a data point of a large data structure. Node in a linked list must be read in order from the begining as 
              list are inherently sequential access. 
@@ -11,3 +13,15 @@ Binary search tree: a binary tree in which for each node, a value of all the nod
                     has value greater than root. This help binary tree to be fast lookup, addition and removal of items. 
               
 Hash Table: a structure that can map keys to value by using a hash function. Example: Putting a name into a hash through a hash function.             
+
+Directed Acylic Graph (DAG): A finite “directed graph” with no “directed cycles”. Directed graph is a graph that is a set of vertices connected by edges, where edges have a direction associated with them. But DAG is directed graph without a consistent directed sequence since it has no directed cycles. Acylic is non circular, it’s moving node to node by following the edges.
+
+[Cryptography]
+
+Public/Private Key Cryptography: Refers to the cryptographic system that uses pairs of keys: public and private keys which are known only to the owner. This system allows for authentication and encryption.
+
+RSA(Rivest-Shamir-Adleman) is one of the first public-key cryptosysttems. A system base on the difficulty of the factorization of the product of two large prime numbers.   RSA rest on the difficulty of factorizing the product of two large prime numbers. You can multiple the two large prime number, but it will take you long time to find those two prime # from their multiplied. 
+Cryptographic hash function: a one way function, that is impossible to invert. Only way is brute force search of possible match. 
+
+Merkle tree: A hash data structure tree where each leaf node is labelled with the hash of a data block and every non leaf node is labelled with cryptographic hash( or the hash of its previous hashes) . Merkle tree is use to verify the consistency and content of data. Merkle tree enable a user to verify whether or not a transaction is included in a block.
+
