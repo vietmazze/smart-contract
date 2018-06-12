@@ -1,5 +1,5 @@
 ## Data Structures
-- [ ] [Linked Lists](https://en.wikipedia.org/wiki/Linked_list)
+- [x] [Linked Lists](https://en.wikipedia.org/wiki/Linked_list)
 - [ ] [Binary Search Trees](https://en.wikipedia.org/wiki/Binary_search_tree)
 - [ ] [Hash Maps](https://en.wikipedia.org/wiki/Hash_table)
 - [ ] [Graphs](https://en.wikipedia.org/wiki/Graph_%28discrete_mathematics%29)
