@@ -28,6 +28,16 @@ Cryptographic hash function: a one way function, that is impossible to invert. O
 
 ## Merkle tree: 
 A hash data structure tree where each leaf node is labelled with the hash of a data block and every non leaf node is labelled with cryptographic hash( or the hash of its previous hashes) . Merkle tree is use to verify the consistency and content of data. Merkle tree enable a user to verify whether or not a transaction is included in a block.
+Merkle proofs: The Merkle root represents all the hashes in the tree, where if one hash is modified the entire tree is invalid. 
+
+
+# Distributed System
+
+## Consistency Systems:
+Where there exist consistent rules for a model in which the devs follow in order for memory of the coding to happen naturally and predictable. 
+
+## Concensus: 
+In computer science, when you have a system whose components are located on diff networked computers, you run into the system reliability from one network to the other. Especially in a multi-agent systems. A concensus is the idea of requiring  number of agents to agree on in order to push/ commit a transaction to database. Concensus must be fault tolerant( even in cases of failure in some components, the system must continue to operate properly) and somehow put forth their candidate values and agree on a single consensus. 
 
 ## Linearization: 
 In terms of transaction, a linearization order has a sequential ordering requirement that if T1 ends before T2 starts, then T1 must be ordered before T2. 
