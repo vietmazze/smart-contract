@@ -28,3 +28,10 @@ Cryptographic hash function: a one way function, that is impossible to invert. O
 
 ## Merkle tree: 
 A hash data structure tree where each leaf node is labelled with the hash of a data block and every non leaf node is labelled with cryptographic hash( or the hash of its previous hashes) . Merkle tree is use to verify the consistency and content of data. Merkle tree enable a user to verify whether or not a transaction is included in a block.
+
+## Linearization: 
+In terms of transaction, a linearization order has a sequential ordering requirement that if T1 ends before T2 starts, then T1 must be ordered before T2. 
+
+## Fault tolerant:
+The property of a system that enables a system to continue operating properly in the even of the failure some of its components. 
+
