@@ -70,8 +70,8 @@ A type of database partitioning (horizontal) that separates very large databases
 ## Blockchain: 
 A blockchain is a ledger(notebook) of facts, assign accross multiple computers around the world in a peer to peer network. Facts can be transactions, some type of data. In the blockchain, each member is anonymous and called nodes. Comunication inside a blockchain goes through a crytographic hash function that securely identify the sender and receiver. When a new transactions accur, a concensus is needed in order for the fact to appear on the ledger. The concensus is carry through a system of POW, where each block has the info and the next block follow the previous block to carry out the function through a random mathematical challenge.
  - peer-to-peer networks, public-key cryptography, and distributed consensus based on the resolution of a random mathematical challenge.
- - A blockchain uses 
-       - the block timestamp (e.g. 1637-09-15 20:52:38) and
-       - the hash from the previous block (e.g. edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b) and finally
-       - the block data (e.g. Transaction Data...)
-       - to calculate the new hash digest checksum, that is, the hash e.g. 
+ - ### A blockchain uses: 
+ - the block timestamp (e.g. 1637-09-15 20:52:38) and
+ - the hash from the previous block (e.g. edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b) and finally
+ - the block data (e.g. Transaction Data...)
+ - to calculate the new hash digest checksum, that is, the hash e.g. 
