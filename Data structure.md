@@ -65,3 +65,8 @@ A database in which storage devices are not all attached to a common processor, 
 ## Sharding
 A type of database partitioning (horizontal) that separates very large databases into smaller, faster more easily managed parts 
 
+# Intro to BTC
+
+## Blockchain: 
+A blockchain is a ledger(notebook) of facts, assign accross multiple computers around the world in a peer to peer network. Facts can be transactions, some type of data. In the blockchain, each member is anonymous and called nodes. Comunication inside a blockchain goes through a crytographic hash function that securely identify the sender and receiver. When a new transactions accur, a concensus is needed in order for the fact to appear on the ledger. The concensus is carry through a system of POW, where each block has the info and the next block follow the previous block to carry out the function. 
+
