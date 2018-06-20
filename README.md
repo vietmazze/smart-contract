@@ -82,7 +82,7 @@
 - [ ] [Bitcoin's Academic Pedigree](https://queue.acm.org/detail.cfm?id=3136559)
 - [ ] [Bitcoin Forks](https://www.coindesk.com/short-guide-bitcoin-forks-explained/)
 - [ ] [Double Spends, 51% Attacks](https://www.youtube.com/watch?v=UPxaCj8ZsEU)
-- [ ] [Replay Attacks](https://bitcointechtalk.com/how-to-protect-against-replay-attacks-7a00bd2fe52f?gi=618160cafff4)
+- [x] [Replay Attacks](https://bitcointechtalk.com/how-to-protect-against-replay-attacks-7a00bd2fe52f?gi=618160cafff4)
 - [ ] [Segregated Witness](https://en.wikipedia.org/wiki/SegWit)
 - [ ] [Bitcoin Scalability Problems](https://en.wikipedia.org/wiki/Bitcoin_scalability_problem)
 - [ ] [Mega Bitcoin Resources List](https://lopp.net/bitcoin.html)
