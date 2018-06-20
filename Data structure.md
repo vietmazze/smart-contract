@@ -75,3 +75,13 @@ A blockchain is a ledger(notebook) of facts, assign accross multiple computers a
  - the hash from the previous block (e.g. edbd4e11e69bc399a9ccd8faaea44fb27410fe8e3023bb9462450a0a9c4caa1b) and finally
  - the block data (e.g. Transaction Data...)
  - to calculate the new hash digest checksum, that is, the hash e.g. 
+ 
+## Replay Attack:
+When you have two ledgers that share the same history and txs, such as the hard fork of BCH, both ledgers will share the same history and the amount hold. What if you want to send some transaction on only 1 ledger? it turns out, a person can copy the same transaction that you have done on one ledger to the other... since your transaction is valid on both ledgers. The person who presents the copy of the check on the other ledger is replaying the transaction. This is a problem since you wanted to send on only one ledger. We call this a replay attack. 
+ - Bitcoin Cash solved this problem by changing the check ever so slightly. They created a special mark on the check that identified the check was for the BCH ledger and not the other ledger.Thus, any node now auditing Bitcoin will automatically reject a Bitcoin Cash check since the check has that special mark. Anyone auditing Bitcoin Cash will reject a Bitcoin check since the check is missing the special mark. This special mark is called replay protection since it prevents replay attacks.
+ - Current problem involves the SEGWIT2x hard fork refusing to add a replay protection
+ 
+## Segregated Witness:
+One of the problem in Bitcoin transaction is the Malleability, which describes the transaction hash(digital signatures) can be alter. Imagine having a bank check and someone alter the signature. What would be the problem? 
+ -  Many people consider this a flaw because a user can potentially change a transaction ID. This could lead to extra bitcoin being sent if a user claims they never received the bitcoin and the sender checks the original transaction ID to verify (which would not exist on the block chain if the ID was changed).
+ - With SegWit, the transaction identifier no longer takes into account the signature. This means that even if the attacker changes the signature, the transaction identifier stays the same.
