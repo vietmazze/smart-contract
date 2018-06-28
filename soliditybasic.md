@@ -28,3 +28,12 @@
         `require(`
            ` msg.sender == seller,`
             `"Only seller can call this."`
+
+`contract SimpleAuction {
+    event HighestBidIncreased(address bidder, uint amount); // Event
+
+    function bid() public payable {
+        // ...
+        emit HighestBidIncreased(msg.sender, msg.value); // Triggering event
+    }
+}`
