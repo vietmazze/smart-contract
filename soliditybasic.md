@@ -65,3 +65,26 @@ A subset of units are use to convert Ether, 2 ether == 2000 finney.
 -	`now (uint)`: current block timestamp (alias for block.timestamp)
 -	`tx.gasprice (uint)`: gas price of the transaction
 -	`tx.origin (address)`: sender of the transaction (full call chain)
+
+
+## Inheritance: 
+-	A way to connect to contracts with each other, a contract can inherits from multiple contracts and only a single contract is created on the blockchain. 
+`contract owned {
+    constructor() { owner = msg.sender; }
+    address owner;
+}`
+-	 Use `is` to derive from another contract. Derived
+	 contracts can access all non-private members including
+	 internal functions and state variables. These cannot be
+	 accessed externally via `this`, though.
+	
+	`contract mortal is owned {
+    	function kill() {
+   	     if (msg.sender == owner) selfdestruct(owner);`
+    
+-	One problem with multiple inheritance is the Diamond Problem.
+` contract X {}
+contract A is X {}
+contract C is A, X {}`
+C requests X to override A, but A itself requests to override X, which is a contradiction.
+
