@@ -86,5 +86,6 @@ A subset of units are use to convert Ether, 2 ether == 2000 finney.
 ` contract X {}
 contract A is X {}
 contract C is A, X {}`
-C requests X to override A, but A itself requests to override X, which is a contradiction.
+
+-	C requests X to override A, but A itself requests to override X, which is a contradiction.
 
