@@ -89,3 +89,11 @@ contract C is A, X {}`
 
 -	C requests X to override A, but A itself requests to override X, which is a contradiction.
 
+## MSG object:
+-  A global variable that is used to describe who just sent in a function invocation
+-  msg.data : Data field from the call or transaction that invoked the current function. 
+-  msg.sender: Address of the account that started the current function/ transaction
+-  msg.value: Amount of ether that was sent along with the function invocation
+
+
+
