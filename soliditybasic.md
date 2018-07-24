@@ -97,3 +97,7 @@ contract C is A, X {}`
 
 
 
+# Reference Type:
+- fixed array: Single type of element, unchanging length  `int[3] -> [1,2,3]`
+- dynamic array: single type but can change in size. dont place a # in int[]  `int[] -> [1,2,3]`
+- mapping: Collection of key value pairs.
