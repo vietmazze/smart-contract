@@ -10,7 +10,7 @@
 ## Structure of a Contract
 -	State variables: are values which are permanently stored in the contract storage. 
 -	Booleans (T/F)
--	Integers int/uint with various bits, uint8 uint256
+-	Integers int/uint with various bits, uint8 uint256. int is positive or negative integer with no decimal/ uint is only positive with no decimal
 -	Address: holds a 20 byte value (size of an Ethereum address) with members balance and transfer.
   
   `address myAddress = this;`
@@ -103,5 +103,11 @@ contract C is A, X {}`
 - Solidity allows nested array but the bridge between JS/Web3 and Solidity does not allow nested dynamic array.. so we must convert.
 - Strings in solidity is considered as nested array, so we cannot transfer array of strings to JS. We can stored but not move.
 - mapping: Collection of key value pairs.
-- Pseudo random number generator: Since solidity doesnt have random generator, we must make a "fake" generator. 
+- Pseudo random number generator: Since solidity doesnt have random generator, we must make a "fake" generator. Keccak256/sha3/block.difficulty/now/ are global variable
+	` function random() private view returns (uint) {
+		`return uint(keccak256(block.difficulty, now, players));`
+	  `}`	
+	  
+- players[1].transfer(this.balance): transfer is a global function that allow you to send this.balance to the player 1
+- Inside a function, you can restart it by using `new` variable.
 
