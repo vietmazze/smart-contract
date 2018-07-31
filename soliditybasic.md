@@ -100,4 +100,8 @@ contract C is A, X {}`
 # Reference Type:
 - fixed array: Single type of element, unchanging length  `int[3] -> [1,2,3]`
 - dynamic array: single type but can change in size. dont place a # in int[]  `int[] -> [1,2,3]`
+- Solidity allows nested array but the bridge between JS/Web3 and Solidity does not allow nested dynamic array.. so we must convert.
+- Strings in solidity is considered as nested array, so we cannot transfer array of strings to JS. We can stored but not move.
 - mapping: Collection of key value pairs.
+- Pseudo random number generator: Since solidity doesnt have random generator, we must make a "fake" generator. 
+
