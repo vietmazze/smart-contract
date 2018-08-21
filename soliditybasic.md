@@ -118,10 +118,15 @@ contract C is A, X {}`
 # Compile.js
 - Compile.js is use to read in solidity as JS in order to compile. 
 	`const path = require('path')`  allow us to cross platform from solidity to JS
+	
 	`const fs = require('fs')`  link the list to the .sol file
+	
 	`const inboxtPath = path.resolve(___dirname, 'contracts', 'Inbox.sol')`
+	
 	`const source = fs.readFileSync(inboxPath,'utf8')`
+	
 	Afterward you can compile with: 
 	`const solc = require('solc')`
+	
 	`olc.compile(source,1)`
 	
