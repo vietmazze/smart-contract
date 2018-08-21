@@ -113,7 +113,8 @@ contract C is A, X {}`
 
 # Node JS:
 `npm install -g solc` is Solidity compiler
-- Contract ---> Solidity Compiler ---> ABI | Bytecode
+- Contract ---> Solidity Compiler ---> ABI | Bytecode  where ABI is the communication layer(functions) between SOL and JS, Bytecode is the actual code stored in our blockchain
+
 
 # Compile.js
 - Compile.js is use to read in solidity as JS in order to compile. 
@@ -128,5 +129,15 @@ contract C is A, X {}`
 	- Afterward you can compile with: 
 	`const solc = require('solc')`
 	
-	-`olc.compile(source,1)`
+	-`olc.compile(source,1.contracts[':Inbox')`
+
+# Test.js file:
+- ` const assert = require('assert')`
+- `const ganache = require('ganache-cli')
+- `const Web3 = require('web3')`
+- `const web3 = new Web3(ganache.provider())`
+
+### Web3 = require('web3') 
+- ALlows you to interact with Eth blockchain and Eth smart contracts
+- Provider is a communication layer, receive/send requests form web3 and ganache. In this case web3 is connecting to a ethereum network, Ganache.
 	
