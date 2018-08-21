@@ -111,3 +111,17 @@ contract C is A, X {}`
 - players[1].transfer(this.balance): transfer is a global function that allow you to send this.balance to the player 1
 - Inside a function, you can restart it by using `new` variable.
 
+# Node JS:
+`npm install -g solc` is Solidity compiler
+- Contract ---> Solidity Compiler ---> ABI | Bytecode
+
+# Compile.js
+- Compile.js is use to read in solidity as JS in order to compile. 
+	`const path = require('path')`  allow us to cross platform from solidity to JS
+	`const fs = require('fs')`  link the list to the .sol file
+	`const inboxtPath = path.resolve(___dirname, 'contracts', 'Inbox.sol')`
+	`const source = fs.readFileSync(inboxPath,'utf8')`
+	Afterward you can compile with: 
+	`const solc = require('solc')`
+	`olc.compile(source,1)`
+	
