@@ -116,7 +116,8 @@ contract C is A, X {}`
 - Contract ---> Solidity Compiler ---> ABI | Bytecode  where ABI is the communication layer(functions) between SOL and JS, Bytecode is the actual code stored in our blockchain
 
 
-# Compile.js
+# Compile.js  
+- Need to be able to write Solidity code in JS project, we use Sol compiler
 - Compile.js is use to read in solidity as JS in order to compile. 
 	- `const path = require('path')`  allow us to cross platform from solidity to JS
 	
@@ -133,11 +134,41 @@ contract C is A, X {}`
 
 # Test.js file:
 - ` const assert = require('assert')`
-- `const ganache = require('ganache-cli')
+- `const ganache = require('ganache-cli')`
 - `const Web3 = require('web3')`
 - `const web3 = new Web3(ganache.provider())`
+- `web3.eth.getAccounts()` get list of accounts in Ganache
 
 ### Web3 = require('web3') 
 - ALlows you to interact with Eth blockchain and Eth smart contracts
 - Provider is a communication layer, receive/send requests form web3 and ganache. In this case web3 is connecting to a ethereum network, Ganache.
+- Ganache is the Eth blockchain testnet
+- `web3.eth.getAccounts(console.log);`
+- Async/await: Async is  way to always return a promise, while wait wait until that promise settles. Promise is a function, you assign and promise an action
+- `async function f() {`
+
+  `let promise = new Promise((resolve, reject) => {`
+    `setTimeout(() => resolve("done!"), 1000)`
+  `});`
+
+  `let result = await promise; // wait till the promise resolves (*)`
+- web3.eth.Contract is to use one of the accounts to deploy the contract
+	`new web3.eth.Contract(jsonInterface[, address][, options])`
+	
+### Mocha: 
+- Combine Web3( interaction with Eth blockchain+smartcontract) and Ganache(Eth blockchain), we put them all in Mocha
+- Need to test contrcts without doing the manual testing we were doing with Remix
+- Test frameowrk runnung on node.js
+- Mocha -> Ganache -> manipulate 
+- Mocha functions:
+	- it: Run a test and make an assertion
+	- describe: group together it functions
+	- beforeEach: Excute some general setup
+	 describe('#indexOf()', function() {
+   
+   `it('should return -1 when the value is not present', function() {`
+     ` assert.equal([1,2,3].indexOf(4), -1);`
+       `});`
+	
+# Infura/Rinkeby Deploy contract: Infura/Rinkeby is a Public testnet	
 	
