@@ -180,3 +180,10 @@ contract C is A, X {}`
 
 
 # Frontend with React: 
+### Basic JS:
+- Create empty object, `var obj ={};`
+- Access object by, `obj.name='Simon'` `obj['name']='Simon'
+- `this` keyword refers to the current object, meaning inside a function, by putting this.name='John'.... John become the current object. Furthermore, if you do this[name] instead of this.name, it will be a global object.
+- `var s = new Person('Simon', 'Willison');` new creates a brand new empty object, and then calls the function specified. Related to `this`
+-
+
