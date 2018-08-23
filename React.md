@@ -23,13 +23,13 @@
 - One is a component and the second is ES6 class, quivalent.
 - To render a component, React passes this as a single object, we call this object "props"
 - `function Welcome(props) {`
- ` return <h1>Hello, {props.name}</h1>;`
-`}`
-`const element = <Welcome name="Sara" />;`  This is the element, we pass it thtough Wecome component and returns Hellow Sara
-`ReactDOM.render(`
-  `element,`
-  `document.getElementById('root')`
-`);`
--All react components must act lke a pure functions, respect to their props. NO CHANGE 
-`function withdraw(amount) {` 
+-  ` return <h1>Hello, {props.name}</h1>;`
+- `}`
+- `const element = <Welcome name="Sara" />;`  This is the element, we pass it thtough Wecome component and returns Hellow Sara
+- `ReactDOM.render(`
+- `element,`
+-  `document.getElementById('root')`
+ `);`
+- All react components must act lke a pure functions, respect to their props. NO CHANGE 
+- `function withdraw(amount) {` 
   `account total -=amounnt;`   AMOUNT cannot be change
