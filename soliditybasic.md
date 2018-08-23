@@ -142,6 +142,7 @@ contract C is A, X {}`
 ### Web3 = require('web3') 
 - ALlows you to interact with Eth blockchain and Eth smart contracts
 - Provider is a communication layer, receive/send requests form web3 and ganache. In this case web3 is connecting to a ethereum network, Ganache.
+-Make sure to have a provider that Web3 is connect to, in this case ganache.
 - Ganache is the Eth blockchain testnet
 - `web3.eth.getAccounts(console.log);`
 - Async/await: Async is  way to always return a promise, while wait wait until that promise settles. Promise is a function, you assign and promise an action
@@ -171,4 +172,11 @@ contract C is A, X {}`
        `});`
 	
 # Infura/Rinkeby Deploy contract: Infura/Rinkeby is a Public testnet	
-	
+- After testing with test.sol, we want to deploy our contract on the real testnet.
+- npm install --save truffle-hdwallet-provider, is a special provider that connects with Infura and unlock Eth accounts. 
+### deploy.js
+`const HDWalletProvider = require('truffle-hdwallet-provider')`, identify the Eth wallet source
+`const provider = new HDWalletProvider('mnemonic words' ,'https://rinkeby.infura.api'`
+
+
+# Frontend with React: 
