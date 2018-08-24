@@ -56,10 +56,10 @@
  ` }`
   -
   ## HTML tags:
-  -The <div> tag defines a division or a section in an HTML document.
-  -The <h1> to <h6> tags are used to define HTML headings. [ Bigger to smaller font]
-  -The <button> tag defines a clickable button.
-  -The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+  - The <div> tag defines a division or a section in an HTML document.
+  - The <h1> to <h6> tags are used to define HTML headings. [ Bigger to smaller font]
+  - The <button> tag defines a clickable button.
+  - The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
   
   
   
