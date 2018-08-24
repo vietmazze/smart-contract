@@ -5,6 +5,7 @@
   - It is also valid for expression inside the curly {name} ex: user.firstname, formatName(user)
   - For string literals, you should use quotes `const element = <div tabIndex="0"></div>;`
   - For JS expressions, curly braces `const element = <img src={user.avatarUrl}></img>;`
+  - JSX is a special syntax to write React in a easier structures.
   
  ## Rendering Elements:
  - An element desribes what you want to see on the screen `const element = <h1>Hello, world</h1>;`
@@ -13,6 +14,7 @@
  - `ReactDOM.render(element, document.getElementById('root'));`
 
 ## Components:
+- React component class is use to tell React what we want to see on the screen.
 - A component in React is like JS function. Always start component name with capital letter
 - lowercase letter is for DOM tags, component requires capitilizae
 - `function Welcome(props) {`
@@ -33,3 +35,57 @@
 - All react components must act lke a pure functions, respect to their props. NO CHANGE 
 - `function withdraw(amount) {` 
   `account total -=amounnt;`   AMOUNT cannot be change
+  
+  ## State: 
+  - To remember things, components uses state.
+  - React components can have state by settting this.state in their constructors.
+  - In JS classes, you always call super when defining the constructor of a sublass. All React component classes that have a constructor should start it with a super(props) call.
+  - `	class Square extends React.Component {`
+ ` constructor(props) {`
+    `super(props);`
+    `this.state = {`
+     ` value: null,`
+  `  };`
+`  }`
+	`render() {`
+    `return (`
+      `<button className="square" onClick={() => alert('click')}>`
+       ` {this.props.value}`
+      `</button>`
+   ` );`
+ ` }`
+  -
+  ## HTML tags:
+  -The <div> tag defines a division or a section in an HTML document.
+  -The <h1> to <h6> tags are used to define HTML headings. [ Bigger to smaller font]
+  -The <button> tag defines a clickable button.
+  -The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
