@@ -8,12 +8,13 @@
   - JSX is a special syntax to write React in a easier structures.
   
  ## Rendering Elements:
- - An element desribes what you want to see on the screen `const element = <h1>Hello, world</h1>;`
+ - Rendering element desribes what you want to see on the screen `const element = <h1>Hello, world</h1>;`
  - `<div id="root"></div>` root DOM node is managed by React DOM, to render a React element into root DOM node, pass both to ReactDOm.render()
  - `const element = <h1>Hello, world</h1>;` passing element Hello world, to the root DOM
  - `ReactDOM.render(element, document.getElementById('root'));`
 
 ## Components:
+- A collection of JS functions that produce HTML
 - React component class is use to tell React what we want to see on the screen.
 - A component in React is like JS function. Always start component name with capital letter
 - lowercase letter is for DOM tags, component requires capitilizae
@@ -60,7 +61,7 @@
   - The <h1> to <h6> tags are used to define HTML headings. [ Bigger to smaller font]
   - The <button> tag defines a clickable button.
   - The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
-  
+  - The <li> tag defines a list item.
   
   
   
