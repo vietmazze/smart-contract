@@ -36,6 +36,7 @@
 - All react components must act lke a pure functions, respect to their props. NO CHANGE 
 - `function withdraw(amount) {` 
   `account total -=amounnt;`   AMOUNT cannot be change
+  - PROPS are variables that you pass from the parent to the child, therefore child cannot modify. It's helpful because when bugs arise, you know the child didn't modify to begin with. 
   
   ## State: 
   - To remember things, components uses state.
