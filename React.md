@@ -39,7 +39,9 @@
   
   ## State: 
   - To remember things, components uses state.
+  - Each class has its own state object, and state will force render to rerun if theres a state object
   - React components can have state by settting this.state in their constructors.
+  - Requires to define a constructor and super, then a this.state.
   - In JS classes, you always call super when defining the constructor of a sublass. All React component classes that have a constructor should start it with a super(props) call.
   - `	class Square extends React.Component {`
  ` constructor(props) {`
@@ -50,21 +52,38 @@
 `  }`
 	`render() {`
     `return (`
-      `<button className="square" onClick={() => alert('click')}>`
+      `<button className="square" onClick={event => this.setState({ term: event.target.value}>`
        ` {this.props.value}`
       `</button>`
    ` );`
  ` }`
-  -
+  
+  ## Array to List:
+ - By using map(), we can convert array to a list
+ - `const numbers = [1, 2, 3, 4, 5];`
+ - `const doubled = numbers.map((number) => number * 2);`
+ -  `console.log(doubled);`
+ - A “key” is a special string attribute you need to include when creating lists of elements
+ - Keys help React identify which items have changed, are added, or are removed.
+ - By giving key an id of a list, we can identify which one needs update etc...
+ - Use chrome browser inspect to find a key that we can use.
   ## HTML tags:
   - The `<div>` tag defines a division or a section in an HTML document.
   - The `<h1>` to `<h6>` tags are used to define HTML headings. Bigger to smaller font
   - The `<button>` tag defines a clickable button.
   - The `<ol>` tag defines an ordered list. An ordered list can be numerical or alphabetical.
   - The `<li>` tag defines a list item.
+  - The <ul> tag defines an unordered (bulleted) list.
   
-  
-  
+  ## Function to Class components 
+  - Class has more functionality
+  - `class Clock extends React.Component {
+  - `render() {`
+  - `return (`
+  -    `<div>`
+  -      `<h1>Hello, world!</h1>`
+  -      `<h2>It is {this.props.date.toLocaleTimeString()}.</h2>`
+  -    `</div>`
   
   
   
