@@ -86,6 +86,9 @@
   -      `<h2>It is {this.props.date.toLocaleTimeString()}.</h2>`
   -    `</div>`
   
+  ## Commandline:
+  - npm install -g create-react-app: to install the react app 
+  - create-react-app lottery-react: create the lottery react app 
   
   
   
