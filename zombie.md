@@ -19,3 +19,14 @@
   `      uint randDna= _generateRandomDna(_name);`
      `   _createZombie(_name,_randDna);``
   `  }`
+
+### Events:  
+- are a way for your contract to communicate that something happened on the blockchain to your app front-end, which can be 'listening' for certain events and take action when they happen.
+- Declare an event `event NewZombie( uint zombieId, string name, uint dna);`
+- Then inside a function you want your front end to show/update, "fire" the event inside
+- ` function _createZombie(string _name, uint _dna) private {`
+-       ` uint id = zombies.push(Zombie(_name, _dna)) - 1;` This is use, to record the id of the Zombie by using array's typical ID 
+-       ` NewZombie(id, _name, _dna);` This fires the event to JS front end
+-    } 
+
+
