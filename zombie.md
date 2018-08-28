@@ -25,8 +25,8 @@
 - Declare an event `event NewZombie( uint zombieId, string name, uint dna);`
 - Then inside a function you want your front end to show/update, "fire" the event inside
 - ` function _createZombie(string _name, uint _dna) private {`
--       ` uint id = zombies.push(Zombie(_name, _dna)) - 1;` This is use, to record the id of the Zombie by using array's typical ID 
--       ` NewZombie(id, _name, _dna);` This fires the event to JS front end
--    } 
+- ` uint id = zombies.push(Zombie(_name, _dna)) - 1;` This is use, to record the id of the Zombie by using array's typical ID 
+- ` NewZombie(id, _name, _dna);` This fires the event to JS front end
+
 
 
