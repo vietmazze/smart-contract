@@ -2,16 +2,19 @@
 
 
 ### Types of Data: 
-- Struct
-- Arrays
-1. Mappings: A key value store for storing and looking up data. 
+1. Struct
+2. Arrays
+3. Mappings: A key value store for storing and looking up data. 
   - `mapping (address => uint) public accountBalance;`  the key is an address and the value is a uint
   - `mapping (uint => address) favoriteNumber;`
   - `function setMyNumber(uint _myNumber) public {`
   - `// Update our `favoriteNumber` mapping to store `_myNumber` under `msg.sender``
   - `favoriteNumber[msg.sender] = _myNumber;`
   - `// ^ The syntax for storing data in a mapping is just like with arrays`
-  - #Inheritance: 
+ 4. Inheritance: Use to split your contracts/ code logic into pieces and connect them together.
+ - `contract Doge {}` 
+ - `contract BabyDoge is Doge{}` 
+ - This implies that BabyDoge will run all the functions of Doge before itself.
   
 
 ### Global Variables: 
