@@ -58,9 +58,9 @@
 ### Storage and Memory:
 1. Storage is stored permanently, and requires when dealing with structs and arrays
 
-...`Sandwich[] sandwiches;`
+  ...`Sandwich[] sandwiches;`
 
-...  `function eatSandwich(uint _index) public {
+  ...`function eatSandwich(uint _index) public {
 ...   ` // Sandwich mySandwich = sandwiches[_index];`
 
 ...   ` // ^ Seems pretty straightforward, but solidity will give you a warning`
