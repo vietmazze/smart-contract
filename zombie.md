@@ -61,12 +61,12 @@
   - `Sandwich[] sandwiches;`
 
   - `function eatSandwich(uint _index) public {
-...   ` // Sandwich mySandwich = sandwiches[_index];`
+  - ` // Sandwich mySandwich = sandwiches[_index];`
 
-...   ` // ^ Seems pretty straightforward, but solidity will give you a warning`
-...    `// telling you that you should explicitly declare `storage` or `memory` here.`
-`
-...   ` // So instead, you should declare with the `storage` keyword, like:`
-...    `Sandwich storage mySandwich = sandwiches[_index];``
+  - ` // ^ Seems pretty straightforward, but solidity will give you a warning`
+-  `// telling you that you should explicitly declare `storage` or `memory` here.`
+
+- ` // So instead, you should declare with the `storage` keyword, like:`
+- `Sandwich storage mySandwich = sandwiches[_index];``
 
 
