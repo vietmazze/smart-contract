@@ -11,6 +11,8 @@
   - `// Update our `favoriteNumber` mapping to store `_myNumber` under `msg.sender``
   - `favoriteNumber[msg.sender] = _myNumber;`
   - `// ^ The syntax for storing data in a mapping is just like with arrays`
+  - #Inheritance: 
+  
 
 ### Global Variables: 
 - msg.sender: Refers to the address of the person, who called the current function. 
