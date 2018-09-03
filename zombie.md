@@ -1,5 +1,20 @@
 # Crypto Zombie
 
+
+### Types of Data: 
+- Struct
+- Arrays
+- Mappings: A key value store for storing and looking up data. 
+       - `mapping (address => uint) public accountBalance;`  the key is an address and the value is a uint
+       - `mapping (address => uint) favoriteNumber;`
+       - `function setMyNumber(uint _myNumber) public {`
+       - `// Update our `favoriteNumber` mapping to store `_myNumber` under `msg.sender``
+       - `favoriteNumber[msg.sender] = _myNumber;`
+       - `// ^ The syntax for storing data in a mapping is just like with arrays`
+
+### Global Variables: 
+- msg.sender: Refers to the address of the person, who called the current function. 
+
 ### Typecasting: 
 - Convert between data types by adding the casting wanted in front.
 - `uint8 c - a * uint(b)`
@@ -28,5 +43,7 @@
 - ` uint id = zombies.push(Zombie(_name, _dna)) - 1;` This is use, to record the id of the Zombie by using array's typical ID 
 - ` NewZombie(id, _name, _dna);` This fires the event to JS front end
 
+
+###
 
 
