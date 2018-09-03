@@ -4,7 +4,7 @@
 ### Types of Data: 
 - Struct
 - Arrays
-- Mappings: A key value store for storing and looking up data. 
+1. Mappings: A key value store for storing and looking up data. 
   - `mapping (address => uint) public accountBalance;`  the key is an address and the value is a uint
   - `mapping (uint => address) favoriteNumber;`
   - `function setMyNumber(uint _myNumber) public {`
