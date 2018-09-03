@@ -19,7 +19,7 @@
 
 ### Global Variables: 
 1. msg.sender: Refers to the address of the person, who called the current function. 
--- dfa
+- msg.sender will always be on the left when you're doing require(msg.sender)
 2. require: Makes it so that the function will throw an error and stop executing if some condition is not true.
       - `require(zombieOwner[msg.sender] == 0;`
 
