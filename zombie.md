@@ -18,8 +18,9 @@
   
 
 ### Global Variables: 
-- msg.sender: Refers to the address of the person, who called the current function. 
-- require: Makes it so that the function will throw an error and stop executing if some condition is not true.
+1. msg.sender: Refers to the address of the person, who called the current function. 
+-- dfa
+2. require: Makes it so that the function will throw an error and stop executing if some condition is not true.
       - `require(zombieOwner[msg.sender] == 0;`
 
 ### Typecasting: 
@@ -68,5 +69,5 @@
 
 - ` // So instead, you should declare with the `storage` keyword, like:`
 - `Sandwich storage mySandwich = sandwiches[_index];``
-
+2. Memory is temporary and disappear when the function call ends
 
