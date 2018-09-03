@@ -51,6 +51,21 @@
 - ` NewZombie(id, _name, _dna);` This fires the event to JS front end
 
 
-###
+### Import: 
+- import './somecontract.sol'; 
+- Just to import a contract and make things look nicer.
+
+### Storage and Memory:
+1. Storage is stored permanently, and requires when dealing with structs and arrays
+... `Sandwich[] sandwiches;`
+
+...  `function eatSandwich(uint _index) public {
+...   ` // Sandwich mySandwich = sandwiches[_index];`
+
+...   ` // ^ Seems pretty straightforward, but solidity will give you a warning`
+...    `// telling you that you should explicitly declare `storage` or `memory` here.`
+`
+...   ` // So instead, you should declare with the `storage` keyword, like:`
+...    `Sandwich storage mySandwich = sandwiches[_index];``
 
 
