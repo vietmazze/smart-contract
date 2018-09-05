@@ -46,7 +46,22 @@
 ### Function Visibility:  
 1. internal is the same as private, except that it's also accessible to contracts that inherit from this contract. (Hey, that sounds like what we want here!).
 
-2. external is similar to public, except that these functions can ONLY be called outside the contract — they can't be called by other functions inside that contract. We'll talk about why you might want to use external vs public later.
+2. External is similar to public, except that these functions can ONLY be called outside the contract — they can't be called by other functions inside that contract. We'll talk about why you might want to use external vs public later.
+- In order to interact with external source, an interface is needed. Interface is applied when create a new contract and put the function of that external source in, and end with a semi colon. 
+- `Contract Zombiefeeding is ZombieFactory{}`
+- `contract NumberInterface {`
+  `function getNum(address _myAddress) public view returns (uint);`
+- We can use it in our contract by including it in our contract
+- `Contract Zombiefeeding is ZombieFactory{}`
+- `address NumberInterfaceAddress = 0xab38... 
+-  // ^ The address of the FavoriteNumber contract on Ethereum
+-  `NumberInterface numberContract = NumberInterface(NumberInterfaceAddress);`
+-  // Now `numberContract` is pointing to the other contract
+
+- ` function someFunction() public {`
+-    // Now we can call `getNum` from that contract:
+- `   uint num = numberContract.getNum(msg.sender);`
+-    // ...and do something with `num` here
 
 ### Events:  
 - are a way for your contract to communicate that something happened on the blockchain to your app front-end, which can be 'listening' for certain events and take action when they happen.
@@ -76,3 +91,12 @@
 - `Sandwich storage mySandwich = sandwiches[_index];``
 2. Memory is temporary and disappear when the function call ends
 
+### Handling Multiple return Values:
+- Imagine you have two functions, one with multiple returns... you can assign specific value inside another function by calling it.
+- `function multipleReturns() internal returns(uint a, uint b, uint c) {`
+  `return (1, 2, 3);`
+`}`
+- `function getLastReturnValue() external {`
+ ` uint c;`
+  `// We can just leave the other fields blank:`
+ ` (,,c) = multipleReturns();`
